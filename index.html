@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User cadastro</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="grid">
+        <div class="header">
+            <img class="logo" src="img/R4-LOGO-AZUL.png" alt="">
+            <div class="login">
+                <a href=""><button id="open_modal" onclick="openClose()">Login /<br>Cadastro</button></a>
+            </div>
+        </div>
+
+        <dialog id="modal">
+            <p class="a">Preencha os campos a seguir:</p>
+            <form class="cadastro">
+                <label for="name">
+                    Nome:
+                    <input type="text">
+                </label> <br>
+                <label for="email">
+                    Email:
+                    <input type="email">
+                </label> <br>
+                <label for="tel">
+                    Telefone:
+                    <input type="tel">
+                </label> <br>
+                <label for="cpf">
+                    CPF:
+                    <input type="text">
+                </label> <br>
+                <label for="password">
+                    Senha:
+                    <input type="password">
+                </label>                
+            </form>
+            <a class="btn" href="user.html"><button>Entrar</button></a>       
+        </dialog>
+        
+        <div class="footer"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
